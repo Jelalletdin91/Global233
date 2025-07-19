@@ -1,0 +1,619 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:initial;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 100%);
+   
+}
+
+                            /*HEADER*/
+header{
+    width: 30%;
+    height: 15%;
+    float: left;
+    color: black;
+    padding-top: 0;
+}   
+.headerdiv{
+    width: 30%;
+    padding: 1em;
+    float: left;
+    height: 100%;
+}
+#logoR{
+    height: 100%;
+    width: 50%;
+    margin-left:  5%;
+}
+
+.headerdiv a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: alias;
+}
+
+/*NAV*/
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}.nav-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1em 2em;
+max-width: 1200px;
+margin: auto;
+}
+
+.logo img {
+height: 50px;
+}
+
+.nav-links {
+display: flex;
+align-items: center;
+gap: 1.5em;
+
+}
+                           
+.nav-links :hover{
+text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+                        }
+                    
+.nav-links a, .nav-links select, .nav-links button {
+font-size: 1em;
+font-weight: 500;
+text-decoration: none;
+background: none;
+border: none;
+cursor: pointer;
+color: #333;
+}
+                    
+.nav-links .button {
+  padding: 0.5em 1em;
+  background: linear-gradient(100deg, #6bcaf3, #4a4af5);
+  color: white;
+  border-radius: 5px;
+  transition: all 0.5s linear;
+  }
+  .nav-links .button:hover{
+    transform: scale(1.1);
+    background:linear-gradient(100deg, hsl(130, 96%, 74%), hsl(120, 95%, 62%));
+    
+  }
+                    
+.menu-toggle {
+display: none;
+font-size: 2em;
+background: none;
+border: none;
+cursor: pointer;
+
+}
+ 
+.navdiv{
+    width: 70%;
+    padding: 2%;
+    padding-top: 1%;
+    float: left;
+    height: 100%;
+} 
+.dropdonw{
+    display:inline-block;
+   
+}
+.dropdown:hover{
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+}
+.content{
+   display: none;
+    background-color: #000000a5;
+    text-align: center;
+    gap: 10px;
+    position: absolute;
+    left: 0;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2vh;
+   
+   width: 100vw; 
+}
+.dropdown:hover .content{
+    display: flex;
+    flex-direction: column;
+}
+
+#uni{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+#uni:hover{
+    background-color: #333;
+  }
+  
+#langs{
+    text-decoration: none;
+    border: 0;
+    background-color: white;
+  
+}
+
+
+
+
+
+
+/*MAIN*/
+main{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  gap: 5%;
+}
+.container{
+  width: 33vw;
+  min-height: 52vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  align-items: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.589);
+}
+.kimlik{
+  width: 90%;
+  height: 70%;
+}
+.aboutKim{
+  width: auto;
+  height: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 3%;
+  background-color: rgb(139, 219, 19);
+  border:none;
+  transition: all 0.5s ease-in-out;
+  color: black;
+  text-decoration: none;
+}
+.aboutKim:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: rgb(254, 254, 19);
+  
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 4%;
+    right: 4%;
+    z-index: 999;
+    cursor: pointer;
+    font-size: xx-large;
+    
+}
+.whatsapp img{
+    width: 70px;
+    height: 70px;
+}
+
+/*FOOTER*/
+footer{
+    background-color: hsl(0, 0%, 0%);
+   min-height: 65vh;
+  }
+  #footerDiv{
+     height: 40vh;
+     display: flex;
+     flex-direction: column;
+  }
+  
+  #akLogo{
+     width: 9%;
+     height: 30%;
+     margin-top: 3%;
+     margin-left: 3%;
+    
+  }
+  #footerAdres{
+     display:flex;
+     flex-direction: column;
+     color: white;
+     width: 20vw;
+     padding: 2%;
+     height: 20vh;
+  }
+  #footerSpan{
+     width: 15vw;
+     display: flex;
+     flex-direction: column;
+     gap: 8px;
+     align-items: center;
+     position: relative;
+     left: 30vw;
+     bottom: 15vh;
+  }
+  .footera{
+    color: white;
+    text-decoration: none;
+    width: 25vw;
+    display: block;
+  }
+  .footera:hover{
+     text-decoration: underline;
+  }
+  .dropdonw2{
+    display:inline-block;
+   
+}
+.dropdown2:hover{
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+}
+.content2{
+  display: none;
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+  gap: 10px;
+  position: absolute;
+  left: -30vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 2vh;
+ 
+ width: 100vw; 
+}
+.dropdown2:hover .content2{
+    display: flex;
+    flex-direction: column;
+}
+
+#uni2{
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+}
+#uni2:hover{
+    font-weight: 400;
+    background-color: #797676;
+}
+#uniButton2{
+    background-color: hsl(0, 0%, 0%);
+    border-style: none;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    right: 10vw;
+}
+  #swyaz{
+    display: flex;
+    justify-content: space-around;
+    justify-content:end;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    position: relative;
+    bottom:110%;
+  }
+  #swyaz a:hover{
+    background-color: hsl(258, 87%, 97%);
+  }
+  #imo{
+    width: 48px;
+    height: 48px;
+  }
+
+  .whatsapp{
+    position: fixed;
+    bottom: 4%;
+    right: 4%;
+    z-index: 999;
+    cursor: pointer;
+    font-size: xx-large;
+    
+}
+.whatsapp img{
+    width: 70px;
+    height: 70px;
+}
+
+/*FOOTER*/
+footer{
+    background-color: hsl(0, 0%, 0%);
+   min-height: 65vh;
+  }
+  #footerDiv{
+     height: 40vh;
+     display: flex;
+     flex-direction: column;
+  }
+  
+  #akLogo{
+     width: 9%;
+     height: 30%;
+     margin-top: 3%;
+     margin-left: 3%;
+    
+  }
+  #footerAdres{
+     display:flex;
+     flex-direction: column;
+     color: white;
+     width: 20vw;
+     padding: 2%;
+     height: 20vh;
+  }
+  #footerSpan{
+     width: 15vw;
+     display: flex;
+     flex-direction: column;
+     gap: 8px;
+     align-items: center;
+     position: relative;
+     left: 30vw;
+     bottom: 15vh;
+  }
+  .footera{
+    color: white;
+    text-decoration: none;
+    width: 25vw;
+    display: block;
+  }
+  .footera:hover{
+     text-decoration: underline;
+  }
+  .dropdonw2{
+    display:inline-block;
+   
+}
+.dropdown2:hover{
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+}
+.content2{
+  display: none;
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+  gap: 10px;
+  position: absolute;
+  left: -30vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 2vh;
+ 
+ width: 100vw; 
+}
+.dropdown2:hover .content2{
+    display: flex;
+    flex-direction: column;
+}
+
+#uni2{
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+}
+#uni2:hover{
+    font-weight: 400;
+    background-color: #797676;
+}
+#uniButton2{
+    background-color: hsl(0, 0%, 0%);
+    border-style: none;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    right: 10vw;
+}
+#ikamet{
+  position: relative;
+  right: 10vw;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+#ikamet:hover{
+  text-decoration: underline;
+}
+  #swyaz{
+    display: flex;
+    justify-content: space-around;
+    justify-content:end;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    position: relative;
+    bottom:110%;
+  }
+  #swyaz a:hover{
+    background-color: hsl(258, 87%, 97%);
+  }
+  #imo{
+    width: 48px;
+    height: 48px;
+  }
+  
+
+
+
+
+
+ @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        padding: 1em 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+    .arrow {
+        display: inline-block;
+        margin-left: 0.5em;
+        transition: transform 0.3s ease;
+      }
+      
+      .arrow.rotated {
+        transform: rotate(180deg);
+      }
+      
+      /* Анимация выпадения */
+      .dropdown .content,
+      .dropdown2 .content2 {
+        transition: all 0.3s ease;
+        transform-origin: top;
+      }
+      
+      .dropdown .content.show,
+      .dropdown2 .content2.show {
+        display: block;
+        transform: scaleY(1);
+      }
+      /* Стиль выпадающего блока */
+      .dropdown .content,
+      .dropdown2 .content2 {
+        background: rgb(143, 143, 143);
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+       
+        padding: 0.5em 1em;
+        width: 100%;
+        max-width: 300px;
+        text-align: left;
+        position: relative;
+        left: 7vw;
+        text-decoration: none;
+      }
+    
+    /* Стили для ссылок внутри выпадающего блока */
+    .dropdown .content a,
+    .dropdown2 .content2 a {
+      display: block;
+      padding: 0.5em 0;
+      color: #010101;
+      text-decoration: none;
+      font-weight: 500;
+    
+    }
+    
+    .dropdown .content a:hover,
+    .dropdown2 .content2 a:hover {
+      color: #0066cc;
+       background-color: #626262;
+    }
+    
+    /* Иконка стрелки */
+    .arrow {
+      margin-left: 0.5em;
+      transition: transform 0.3s ease;
+    }
+    
+    .arrow.rotated {
+      transform: rotate(180deg);
+    }
+    #uniButton2{
+      position: relative;
+      left:0vw;
+    }
+    #ikamet{
+      position: relative;
+      left: 0;
+      
+    }
+    #ikamet:hover{
+      text-decoration: underline;
+    }
+
+    /*MAIN*/
+    main{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10%;
+      gap: 5%;
+    }
+    .container{
+      width: 55vw;
+      min-height: 32vh;
+      display: flex;
+      flex-direction: column;
+      margin-top: 20%;
+      align-items: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.589);
+      border-radius: 5%;
+    }
+   
+    .kimlik{
+      width: 90%;
+      height: 70%;
+    }
+    .aboutKim{
+      width: auto;
+      height: auto;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      margin-bottom: 3%;
+      background-color: rgb(139, 219, 19);
+      border:none;
+      transition: all 0.5s ease-in-out;
+    }
+
+    /*FOOTER*/
+    #ikamet{
+      position: relative;
+      left: 0;
+      
+    }
+    #ikamet:hover{
+      text-decoration: underline;
+    }
+  
+    #footerDiv { height: auto; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  
+    #akLogo { width: 40%; height: auto; margin: 0 auto; }
+    
+    #footerAdres, #footerSpan { width: 100%; text-align: center; position: static; padding: 0; }
+    
+    .footera { color: white; text-decoration: none; display: block; padding: 0.5em; }
+   
+    .footera:hover { text-decoration: underline; }
+    
+    #swyaz { display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap; gap: 1em; margin-top: 1em; }
+    
+    #imo { width: 48px; height: 48px; }
+    
+    .whatsapp img { width: 50px; height: 50px; } 
+                                             
+   }

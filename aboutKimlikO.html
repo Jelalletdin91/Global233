@@ -1,0 +1,201 @@
+<!DOCTYPE HTML5>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="JELALLETDIN">
+        <meta name="description" content="Turkdaki okuwlar">
+        <meta name="keywords" content="Turkdaki okuwlar. tassyklanyan okuwlar">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title> GLOBAL</title>
+       <link rel="icon" type="image/jpg" href="RENKLİ.png">
+       <link rel="stylesheet" href="aboutKimlik.css">
+        <style>
+            
+        </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="RENKLİ.png" alt="Logo"></a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#aboutUs" data-i18n="about">About us</a>
+                <a href="partner.html" data-i18n="partner">Partner</a>
+
+                <div class="dropdown">
+                    <button id="uniButton" data-i18n="Universities">Universities</button>
+                    <div class="content">
+                       <a href="uniler.html" id="uni" data-i18n="all">ALL</a>
+                  <a href="approvedUni.html" id="uni" data-i18n="approvedUni">Approved University</a>  
+                    </div>
+                  
+                </div>
+                
+
+
+
+                <a href="ikamet.html" data-i18n="residence">Residence</a>
+                <select id="langs">
+                    <option value="en" >English</option>
+                    <option value="ru">Русский</option>
+                    <option value="tu">Turkmençe</option>
+                    <option value="tr">Türkçe</option>
+                </select>
+                <a href="dannyyknopka.html"><button class="button" data-i18n="apply">APPLY</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div id="mainDiv">
+        <div id="article">
+            <img src="aboutKimlikFoto.jpg" alt="" id="photoArticle">
+        </div> 
+        <div id="aside">
+            <h2 id="mainText" data-i18n="aboutmainTextO">Student identity </h2>
+            
+        </div>
+
+        </div>
+
+    
+        <h1 id="h1" data-i18n="aboutKimlikHow" >HOW TO GET IDENTITY?</h1>
+       
+            <div id="pdfDiv">
+              <span data-i18n="doc">Documents to get identity:</span> 
+                <button class="action_has has_saved" aria-label="save" type="button">
+                    <svg
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      fill="none"
+                    >
+                      <path
+                        d="m19,21H5c-1.1,0-2-.9-2-2V5c0-1.1.9-2,2-2h11l5,5v11c0,1.1-.9,2-2,2Z"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                        data-path="box"
+                      ></path>
+                      <path
+                        d="M7 3L7 8L15 8"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                        data-path="line-top"
+                      ></path>
+                      <path
+                        d="M17 20L17 13L7 13L7 20"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                        data-path="line-bottom"
+                      ></path>
+                    </svg>
+                  </button>
+            </div>
+       
+
+        <a href="https://wa.me/+905520938903" class="whatsapp"><img src="whatsapp.png" alt="whatsapp"></a>
+    </main>
+
+    <footer>
+        <div id="footerDiv">
+            <img src="BEYAZ.png" alt="logo" id="akLogo">
+            <span id="footerAdres">
+               <p data-i18n="adresse">Adresse: Şirinevler, Gediz Sk. no:10/B, 34134 Bahçelievler/İstanbul</p> 
+              Tel: 05050360196
+            </span>
+
+            <span id="footerSpan">
+
+                <a href="#aboutUs" class="footera" data-i18n="about">About us</a>
+                <a href="partner.html" class="footera" data-i18n="partner">Partner</a>
+
+                <div class="dropdown2">
+                <button id="uniButton2" data-i18n="Universities">Universities</button>
+                <div class="content2">
+                   <a href="uniler.html" id="uni2" data-i18n="all"> ALL</a>
+                   <br>
+              <a href="approvedUni.html" id="uni2" data-i18n="approvedUni"> Approved Uni</a>  
+                </div>
+              
+            </div>
+            
+
+            <a href="ikamet.html" data-i18n="residence" id="ikamet">Residence</a>
+            </span>
+
+            
+            
+            <span id="swyaz">
+               <a href="https://imo.onelink.me/1MBm?pid=QR_code&af_dp=imo%3A%2F%2Fprofile.user%2FAAAAAAAAAAAAAAAAAAAAAKFSjQjITo5U5541v7slnnhxY-oopTs0f9M8zmaS2qv-%2Fscene_qr_code/qr_code_link"><img src="imo.png" alt="imo" id="imo"></a> 
+               <a href="mailto:globalgroupofis@gmail.com"><img src="icons8-gmail-48.png" alt="gmail">  </a>  
+                <a href="https://www.instagram.com/berjanow"><img src="icons8-instagram-48.png" alt="instagram"></a> 
+                 <a href="https://wa.me/+905520938903"><img src="icons8-whatsapp-48.png" alt="whatsapp"></a>
+
+            </span>
+
+        </div>
+            
+        
+    </footer> 
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('show');
+        }
+    </script>
+    <script>
+        // ✅ Dropdown menu работает на телефоне и ПК
+        
+        // Главное меню
+        function toggleMenu() {
+          document.getElementById('navLinks').classList.toggle('show');
+        }
+        
+        // Университеты в header
+        const uniButton = document.getElementById("uniButton");
+        const uniContent = document.querySelector(".dropdown .content");
+        
+        uniButton.addEventListener("click", function (e) {
+          e.stopPropagation(); // не закрывать сразу
+          uniContent.classList.toggle("show");
+          uniButton.querySelector(".arrow").classList.toggle("rotated");
+        });
+        
+        document.addEventListener("click", function (e) {
+          if (!e.target.closest(".dropdown")) {
+            uniContent.classList.remove("show");
+            uniButton.querySelector(".arrow").classList.remove("rotated");
+          }
+        });
+        
+        // Университеты в footer
+        const uniButton2 = document.getElementById("uniButton2");
+        const uniContent2 = document.querySelector(".dropdown2 .content2");
+        
+        uniButton2.addEventListener("click", function (e) {
+          e.stopPropagation();
+          uniContent2.classList.toggle("show");
+          uniButton2.querySelector(".arrow").classList.toggle("rotated");
+        });
+        
+        document.addEventListener("click", function (e) {
+          if (!e.target.closest(".dropdown2")) {
+            uniContent2.classList.remove("show");
+            uniButton2.querySelector(".arrow").classList.remove("rotated");
+          }
+        });
+        </script>
+    
+    <script src="index.js"></script>
+
+   
+</body>
+</html>

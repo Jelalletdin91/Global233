@@ -1,0 +1,145 @@
+<!DOCTYPE HTML5>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="JELALLETDIN">
+        <meta name="description" content="Turkdaki okuwlar">
+        <meta name="keywords" content="Turkdaki okuwlar. tassyklanyan okuwlar">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title> GLOBAL</title>
+       <link rel="icon" type="image/jpg" href="RENKLİ.png">
+       <link rel="stylesheet" href="partner.css">
+
+       <style>
+     
+       
+
+    @media (max-width: 768px) {
+        .menu-toggle {
+            display: block;
+        }
+
+        .nav-links {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: white;
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+            padding: 1em 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-links.show {
+            display: flex;
+        }
+    }
+</style>
+
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="partner.html"><img src="RENKLİ.png" alt="Logo"></a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#aboutUs" data-i18n="about">About us</a>
+                <a href="partner.html" data-i18n="partner">Partner</a>
+
+                <div class="dropdown">
+                    <button id="uniButton" data-i18n="Universities">Universities</button>
+                    <div class="content">
+                       <a href="uniler.html" id="uni" data-i18n="all">ALL</a>
+                  <a href="approvedUni.html" id="uni" data-i18n="approvedUni">Approved University</a>  
+                    </div>
+                  
+                </div>
+
+                <a href="index.html#How" data-i18n="How">How to apply?</a>
+                <select id="langs">
+                    <option value="en" >English</option>
+                    <option value="ru">Русский</option>
+                    <option value="tu">Turkmençe</option>
+                    <option value="tr">Türkçe</option>
+                </select>
+                <a href="dannyyknopka.html"><button class="button" data-i18n="apply">APPLY</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="form-container">
+    
+        <h2 data-i18n="contact">Contact Us</h2>
+       <form action="https://api.web3forms.com/submit" method="POST" >
+            <input type="hidden" name="access_key" value="c682b1f7-9f50-4ce8-a61e-e6459f296958">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="text" name="surname" placeholder="Your Surname" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <label for="agencyName" data-i18n="agencyName">Name of your Agency if you have:</label>
+          <input type="text" name="agencyName" >
+       
+          
+          <input type="number" name="number1" placeholder="First Number" required>
+          <input type="number" name="number2" placeholder="Second Number" required>
+          <textarea name="message" rows="5" placeholder="Your Message" ></textarea>
+          <button type="submit" id="button">Send</button>
+        </form>
+
+        
+        <script>
+            function toggleMenu() {
+                document.getElementById('navLinks').classList.toggle('show');
+            }
+        </script>
+         <script>
+            // ✅ Dropdown menu работает на телефоне и ПК
+            
+            // Главное меню
+            function toggleMenu() {
+              document.getElementById('navLinks').classList.toggle('show');
+            }
+            
+            // Университеты в header
+            const uniButton = document.getElementById("uniButton");
+            const uniContent = document.querySelector(".dropdown .content");
+            
+            uniButton.addEventListener("click", function (e) {
+              e.stopPropagation(); // не закрывать сразу
+              uniContent.classList.toggle("show");
+              uniButton.querySelector(".arrow").classList.toggle("rotated");
+            });
+            
+            document.addEventListener("click", function (e) {
+              if (!e.target.closest(".dropdown")) {
+                uniContent.classList.remove("show");
+                uniButton.querySelector(".arrow").classList.remove("rotated");
+              }
+            });
+            
+            // Университеты в footer
+            const uniButton2 = document.getElementById("uniButton2");
+            const uniContent2 = document.querySelector(".dropdown2 .content2");
+            
+            uniButton2.addEventListener("click", function (e) {
+              e.stopPropagation();
+              uniContent2.classList.toggle("show");
+              uniButton2.querySelector(".arrow").classList.toggle("rotated");
+            });
+            
+            document.addEventListener("click", function (e) {
+              if (!e.target.closest(".dropdown2")) {
+                uniContent2.classList.remove("show");
+                uniButton2.querySelector(".arrow").classList.remove("rotated");
+              }
+            });
+            </script>
+        <script src="dannyy.js"></script>
+        <script src="index.js"></script>
+      </div>
+    </body>
+    </html>

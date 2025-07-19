@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="JELALLETDIN">
+    <meta name="description" content="Turkdaki okuwlar">
+    <meta name="keywords" content="Turkdaki okuwlar. tassyklanyan okuwlar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> GLOBAL</title>
+   <link rel="icon" type="image/jpg" href="RENKLİ.png">
+   <link rel="stylesheet" href="dannyy.css">
+</head>
+<body>
+  <div class="form-container">
+    
+    <h2 data-i18n="contact">Contact Us</h2>
+    <form action="https://usebasin.com/f/3bd849914570" method="POST" enctype="multipart/form-data" id="form" >
+        <input type="hidden" name="access_key" value="c682b1f7-9f50-4ce8-a61e-e6459f296958">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="surname" placeholder="Your Surname" required>
+
+      <select name="typeOfApply" id="select">
+      <option value="Bellenmedik" data-i18n="chooseP">Please choose one</option>
+      <option value="Okuw" data-i18n="studyA" >Apply for study</option>
+      <option value="Okuwçy kimlik" data-i18n:="aboutmainTextI">Student identity</option>
+      <option value="Isçi kimlik" data-i18n:="workerI">Workrer identity</option>
+      </select>
+
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="number" name="number1" placeholder="First Number" required>
+      <input type="number" name="number2" placeholder="Second Number" >
+       <div id="fileD"><label for="file" data-i18n="transkript" id="fileL">Upload Transcript:</label> </div>
+     <input type="file" name="transkript" placeholder="Choose a file" required id="file">
+        <div id="fileD"><label for="file" data-i18n="grades" id="fileL">Upload Grades:</label></div> 
+     <input type="file" name="grades" placeholder="Choose a file" required id="file">
+      
+      <textarea name="message" rows="5" placeholder="Your Message" ></textarea>
+      <button type="submit" id="button">Send</button>
+    </form>
+    
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
