@@ -524,9 +524,12 @@ main {
     width: 100vw;
     height: auto;
     float: none;
+      margin-right:0;
   }
 #aboutUs{
-width:100%;
+width:100vw;
+     margin-right:0;
+}
 
   #photoArticle {
     width: 80%;
