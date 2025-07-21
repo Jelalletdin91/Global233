@@ -552,6 +552,11 @@ main {
   height:  60vh;
   
 }
+
+#aboutUs{
+  width:100%;
+  height:auto
+}
 #aboutF2{
   height: 50vh;
   width: 70vw;
