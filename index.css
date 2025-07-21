@@ -567,7 +567,9 @@ main {
 #aboutF3{
   display: none;
 }
-
+#How{
+  width:100%;
+}
 .howImages {
   width: 80%;
   height: auto;
